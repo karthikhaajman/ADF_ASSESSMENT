@@ -1,0 +1,89 @@
+{
+	"name": "DS_BLB_INPUTS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BLB_ASSESSMENT",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"sheet_name": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().sheet_name",
+					"type": "Expression"
+				},
+				"container": "rawdata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Country Code;Country",
+				"type": "String"
+			},
+			{
+				"name": "Prop_1",
+				"type": "String"
+			},
+			{
+				"name": "Prop_2",
+				"type": "String"
+			},
+			{
+				"name": "Prop_3",
+				"type": "String"
+			},
+			{
+				"name": "Prop_4",
+				"type": "String"
+			},
+			{
+				"name": "Prop_5",
+				"type": "String"
+			},
+			{
+				"name": "Prop_6",
+				"type": "String"
+			},
+			{
+				"name": "Prop_7",
+				"type": "String"
+			},
+			{
+				"name": "Prop_8",
+				"type": "String"
+			},
+			{
+				"name": "Prop_9",
+				"type": "String"
+			},
+			{
+				"name": "Prop_10",
+				"type": "String"
+			},
+			{
+				"name": "Prop_11",
+				"type": "String"
+			},
+			{
+				"name": "Prop_12",
+				"type": "String"
+			},
+			{
+				"name": "Prop_13",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "AZUREDFASSESSMENT",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4eb727c8-432e-44fb-a37e-86949418794e",
+		"tenantId": "2800c0a0-70e9-49be-8733-faeaa6aced99"
+	}
+}

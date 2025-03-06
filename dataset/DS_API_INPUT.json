@@ -1,0 +1,16 @@
+{
+	"name": "DS_API_INPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_API_USERDETAILS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": "/users"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

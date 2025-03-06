@@ -1,0 +1,22 @@
+{
+	"name": "DS_EXCEL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BLOB_EXCEL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Data",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Customer.xlsx",
+				"container": "rawdataexcel"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

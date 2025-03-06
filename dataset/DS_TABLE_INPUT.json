@@ -1,0 +1,22 @@
+{
+	"name": "DS_TABLE_INPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_MSQL_ASSESSMENTDB",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"sheet_name": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "user_details"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
